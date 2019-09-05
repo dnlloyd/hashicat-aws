@@ -10,7 +10,7 @@ cat << EOM > /var/www/html/index.html
 
   <!-- BEGIN -->
   <center><img src="https://static.boredpanda.com/blog/wp-content/uploads/2018/02/stray-dog-frodo-transformation-marko-duspara-fb__700-png.jpg"></img></center>
-  <center><h2>Meow World!</h2></center>
+  <center><h2>Meow World! yes</h2></center>
   Welcome to ${PREFIX}'s app. Replace this text with your own. 
   <!-- END -->
   
