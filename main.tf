@@ -22,7 +22,7 @@ resource "aws_key_pair" "hashicat" {
 
 resource "aws_vpc" "hashicat" {
   cidr_block           = "${var.address_space}"
-  enable_dns_hostnames = false
+  enable_dns_hostnames = true
 
   tags = {
     Name = "${var.prefix}-vpc"
@@ -132,6 +132,7 @@ resource "aws_instance" "hashicat" {
   associate_public_ip_address = true
   subnet_id                   = "${aws_subnet.hashicat.id}"
   vpc_security_group_ids      = ["${aws_security_group.hashicat.id}"]
+  
 
   tags = {
     Name = "${var.prefix}-hashicat-instance"
